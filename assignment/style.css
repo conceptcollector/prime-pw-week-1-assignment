@@ -2,15 +2,26 @@
 body {
     background-color: lightslategray;
     font-family: sans-serif;
-    
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /* Make the header and footer a different color from the background */
 header, footer {
-    color: #e6a8e3;
+    background-color: #e6a8e3;
+    color: lightslategray;
+    padding: 10px 5%;
+}
+
+footer{
+    margin-top: auto;
 }
 /* Align the h1 containing your name in the center of the header*/
 h1 {
     text-align: center;
+    margin: 0;
 }
 /* Make your p tag a different color and italic */
 p {
@@ -22,6 +33,7 @@ img {
     width: 400px;
     height: auto;
     border: 5px solid #e6a8e3;
+    margin-top: 5px;
 }
 /* Change the font-family of your list */
 ul {
