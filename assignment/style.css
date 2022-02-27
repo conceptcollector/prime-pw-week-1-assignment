@@ -4,19 +4,18 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh; /* The body now takes at least the entire page */
+    display: flex; /* Because footer is a child of body, it is a flex item and will display at the bottom of the page */
+    flex-direction: column; /* Sets the cross-axis to have the flex items run vertically */
 }
 /* Make the header and footer a different color from the background */
 header, footer {
     background-color: #e6a8e3;
     color: lightslategray;
-    padding: 10px 5%;
+    padding: 20px 5%;
 }
-
-footer{
-    margin-top: auto;
+footer {
+    margin-top: auto; /* Pushes the footer as far away from its neighbor as the browser will allow, pushing the footer to the bottom of the browser page */
 }
 /* Align the h1 containing your name in the center of the header*/
 h1 {
@@ -29,17 +28,33 @@ p {
     font-style: italic;
 }
 /* Put a border around your image */
+
 img {
     width: 400px;
     height: auto;
     border: 5px solid #e6a8e3;
-    margin-top: 5px;
+    margin-top: 20px;
+    box-shadow: 5px 5px lightgreen;
 }
 /* Change the font-family of your list */
 ul {
     font-family: Bookman, Georgia, serif;
+    color: white;
     line-height: 200%;
+    border-top: medium solid lightgreen;
+    border-bottom: medium solid lightgreen;
 }
+li {
+    animation: fadeInLoad 9s; /* Dictates a longer fade in time than for the image */
+}
+@keyframes fadeInLoad {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+} /* Dictates the milestones of complete transparency and complete opacity */
 div {
     font-family: Bradley Hand, cursive;
 }
