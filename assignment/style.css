@@ -45,7 +45,7 @@ ul {
     border-bottom: medium solid lightgreen;
 }
 li {
-    animation: fadeInLoad 9s; /* Dictates a longer fade in time than for the image */
+    animation: fadeInLoad 9s; /* Dictates a fade in time than for the image */
 }
 @keyframes fadeInLoad {
     from {
